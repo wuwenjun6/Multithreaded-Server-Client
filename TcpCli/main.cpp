@@ -56,7 +56,7 @@ int main(void)
 		if (strcmp(buf, "quit") == 0)
 			break;
 
-		//·¢ËÍ
+		//å‘é€
 		ret = send(sock, buf, strlen(buf), 0);
 		if (ret == -1)
 		{
@@ -64,7 +64,7 @@ int main(void)
 			exit(1);
 		}
 
-		//½ÓÊÕ
+		//æ¥æ”¶
 		ret = recv(sock, recvbuf, sizeof(buf), 0);
 		if (ret == -1)
 		{
@@ -85,7 +85,7 @@ int main(void)
 	}
 
 
-	//¹Ø±Õ
+	//å…³é—­
 	closesocket(sock);
 
 	return 0;
